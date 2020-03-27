@@ -9,10 +9,17 @@ namespace EFmodelling
     {
         public DbSet<Book> Books { get; set; }
         public DbSet<Publisher> Publishers {get;set;}
+        public DbSet<PriceOffer> PriceOffers { get; set; }
+        public DbSet<Author> Authors { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Book>().ToTable("BookInfo");
             modelBuilder.Entity<Book>().HasIndex(b => b.PublisherId);
+            modelBuilder.Entity<BookAuthor>().HasKey(x => new { x.BookId, x.AuthorId });
+            modelBuilder.Entity<Book>()
+            .HasOne(b => b.PriceOffer)
+            .WithOne(i => i.Book)
+            .HasForeignKey<PriceOffer>(b => b.BookISBN);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
