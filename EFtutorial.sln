@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFtutorial", "EFtutorial\EFtutorial.csproj", "{EA06C408-2A25-4C58-BF52-0B05A8B93711}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFFirstSteps", "EFtutorial\EFFirstSteps.csproj", "{EA06C408-2A25-4C58-BF52-0B05A8B93711}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFcrud", "EFcrud\EFcrud.csproj", "{6C3A209A-5FC8-4AC9-B470-2BD2C5550787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFmodelling", "EFmodelling\EFmodelling.csproj", "{38243199-F450-4B02-BA1F-4E21F256580D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6C3A209A-5FC8-4AC9-B470-2BD2C5550787}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C3A209A-5FC8-4AC9-B470-2BD2C5550787}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C3A209A-5FC8-4AC9-B470-2BD2C5550787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38243199-F450-4B02-BA1F-4E21F256580D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38243199-F450-4B02-BA1F-4E21F256580D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38243199-F450-4B02-BA1F-4E21F256580D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38243199-F450-4B02-BA1F-4E21F256580D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
