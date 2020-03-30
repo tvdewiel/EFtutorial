@@ -1,0 +1,13 @@
+De Zwarte Rotsen;7;Kuifje;Hergé;Casterman
+De Zonnetempel;14;Kuifje;Hergé;Casterman
+Het Sterrenkind;7;Thorgal;Rosinski,Van Hamme;Le Lombard
+Billy the Kid;20;Lucky Luke;Goscinny,Morris;Dupuis
+Het geheim van de Eenhoorn;11;Kuifje;Hergé;Casterman
+Lucky Luke tegen Pat Poker;5;Lucky Luke;Morris;Dupuis
+Calamity Jane;30;Lucky Luke;Goscinny, Morris;Dupuis
+In het spoor van de Daltons;17;Lucky Luke;Goscinny,Morris;Dupuis
+Aniël;36;Thorgal;Rosinski,Yann;Le Lombard
+Scharlaken vuur;35;Thorgal;Dorison,Rosinski;Le Lombard
+De onzichtbare vesting;19;Thorgal;Rosinski, Van Hamme;Le Lombard
+De ijskoningin;1;Thorgal;Rosinski, Van Hamme;Le Lombard
+Drie grijsaards in het land van Aran;3;Thorgal;Rosinski,Van Hamme;Le Lombard
