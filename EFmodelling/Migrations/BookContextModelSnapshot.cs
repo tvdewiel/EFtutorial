@@ -62,20 +62,15 @@ namespace EFmodelling.Migrations
 
             modelBuilder.Entity("EFmodelling.BookAuthor", b =>
                 {
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
+                    b.Property<string>("BookISBN")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AuthorId")
                         .HasColumnType("int");
 
-                    b.Property<string>("BookISBN")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("BookId", "AuthorId");
+                    b.HasKey("BookISBN", "AuthorId");
 
                     b.HasIndex("AuthorId");
-
-                    b.HasIndex("BookISBN");
 
                     b.ToTable("BookAuthor");
                 });
@@ -163,7 +158,9 @@ namespace EFmodelling.Migrations
 
                     b.HasOne("EFmodelling.Book", "Book")
                         .WithMany("AuthorsLink")
-                        .HasForeignKey("BookISBN");
+                        .HasForeignKey("BookISBN")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EFmodelling.PriceOffer", b =>

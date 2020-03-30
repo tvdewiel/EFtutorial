@@ -50,13 +50,12 @@ namespace EFmodelling.Migrations
                 name: "BookAuthor",
                 columns: table => new
                 {
-                    BookId = table.Column<int>(nullable: false),
-                    AuthorId = table.Column<int>(nullable: false),
-                    BookISBN = table.Column<string>(nullable: true)
+                    BookISBN = table.Column<string>(nullable: false),
+                    AuthorId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookAuthor", x => new { x.BookId, x.AuthorId });
+                    table.PrimaryKey("PK_BookAuthor", x => new { x.BookISBN, x.AuthorId });
                     table.ForeignKey(
                         name: "FK_BookAuthor_Authors_AuthorId",
                         column: x => x.AuthorId,
@@ -68,18 +67,13 @@ namespace EFmodelling.Migrations
                         column: x => x.BookISBN,
                         principalTable: "BookInfo",
                         principalColumn: "ISBN",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookAuthor_AuthorId",
                 table: "BookAuthor",
                 column: "AuthorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_BookAuthor_BookISBN",
-                table: "BookAuthor",
-                column: "BookISBN");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PriceOffers_BookISBN",

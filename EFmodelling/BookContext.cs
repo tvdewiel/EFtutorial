@@ -15,7 +15,7 @@ namespace EFmodelling
         {
             modelBuilder.Entity<Book>().ToTable("BookInfo");
             modelBuilder.Entity<Book>().HasIndex(b => b.PublisherId);
-            modelBuilder.Entity<BookAuthor>().HasKey(x => new { x.BookId, x.AuthorId });
+            modelBuilder.Entity<BookAuthor>().HasKey(x => new { x.BookISBN, x.AuthorId });
             modelBuilder.Entity<Book>()
             .HasOne(b => b.PriceOffer)
             .WithOne(i => i.Book)
