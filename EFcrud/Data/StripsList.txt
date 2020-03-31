@@ -11,3 +11,6 @@ Scharlaken vuur;35;Thorgal;Dorison,Rosinski;Le Lombard
 De onzichtbare vesting;19;Thorgal;Rosinski, Van Hamme;Le Lombard
 De ijskoningin;1;Thorgal;Rosinski, Van Hamme;Le Lombard
 Drie grijsaards in het land van Aran;3;Thorgal;Rosinski,Van Hamme;Le Lombard
+Alex;15;Jeremiah;Hermann;Dupuis
+Simon is terug;14;Jeremiah;Hermann;Dupuis
+Delta;11;Jeremiah;Hermann;Dupuis

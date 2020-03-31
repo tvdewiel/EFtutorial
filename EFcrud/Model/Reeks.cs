@@ -14,5 +14,9 @@ namespace EFcrud.Model
         public int ReeksID { get; set; }
         public string Naam { get; set; }
         public ICollection<Strip> Strips { get; set; } = new List<Strip>();
+        public override string ToString()
+        {
+            return $"Reeks [ID:{ReeksID},Naam:{Naam},aantal:{Strips.Count}]";
+        }
     }
 }

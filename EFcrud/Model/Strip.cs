@@ -11,13 +11,11 @@ namespace EFcrud.Model
             Nr = nr;
             Titel = titel;
         }
-
         public Strip(int nr, string titel, Uitgeverij uitgever, Reeks reeks) : this(nr, titel)
         {
             Uitgever = uitgever;
             Reeks = reeks;
         }
-
         public int StripID { get; set; }
         public int Nr { get; set; }
         public string Titel { get; set; }
@@ -27,6 +25,20 @@ namespace EFcrud.Model
         public void VoegAuteurToe(Auteur auteur)
         {
             AuteursLink.Add(new AuteurStrip(auteur,this));
+        }
+        public override string ToString()
+        {
+            return $"Strip[ID:{StripID},Nr:{Nr},Titel:{Titel},Auteurs:{AuteursLink.Count},\nUitgever:{Uitgever},\nReeks:{Reeks}]";
+        }
+        public void ToonDetail()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(this);
+            Console.ResetColor();
+            foreach (var al in AuteursLink)
+            {
+                Console.WriteLine(al.Auteur);
+            }
         }
     }
 }

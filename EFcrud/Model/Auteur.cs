@@ -10,9 +10,12 @@ namespace EFcrud.Model
         {
             Naam = naam;
         }
-
         public int AuteurID { get; set; }
         public string Naam { get; set; }
         public ICollection<AuteurStrip> StripsLink { get; set; } = new List<AuteurStrip>();
+        public override string ToString()
+        {
+            return $"Auteur[ID:{AuteurID},Naam:{Naam},strips:{StripsLink.Count}]";
+        }
     }
 }

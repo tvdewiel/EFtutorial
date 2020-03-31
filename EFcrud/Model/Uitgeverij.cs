@@ -13,5 +13,9 @@ namespace EFcrud.Model
 
         public int UitgeverijID { get; set; }
         public string Naam { get; set; }
+        public override string ToString()
+        {
+            return $"Uitgeverij[ID:{UitgeverijID},Naam:{Naam}]";
+        }
     }
 }
