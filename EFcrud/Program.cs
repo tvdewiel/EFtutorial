@@ -15,7 +15,9 @@ namespace EFcrud
             //SM.ToonStrips();
             //SM.ToonStripsInclude();
             //SM.ToonStripsFilter();
-            SM.ToonStripsIncludeAsNoTracking();
+            //SM.ToonStripsIncludeAsNoTracking();
+            //SM.UpdateStrip();
+            SM.VerwijderStrip();
         }
     }
 }

@@ -121,5 +121,26 @@ namespace EFcrud
                 }
             }
         }
+        public void UpdateStrip()
+        {
+            using (StripsContext ctx = new StripsContext())
+            {
+                Strip strip = ctx.Strips.Single(x => x.StripID == 26);
+                strip.Titel = "Het sterrenkind";
+                strip.Nr = 7;
+                ctx.SaveChanges();
+            }
+        }
+        public void VerwijderStrip()
+        {
+            using (StripsContext ctx = new StripsContext())
+            {
+                Strip strip = ctx.Strips.Single(x => x.StripID == 26);
+                ctx.Strips.Remove(strip);
+
+                ctx.Strips.Remove(new Strip() { StripID = 27 });
+                ctx.SaveChanges();
+            }
+        }
     }
 }

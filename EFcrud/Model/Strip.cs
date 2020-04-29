@@ -16,6 +16,10 @@ namespace EFcrud.Model
             Uitgever = uitgever;
             Reeks = reeks;
         }
+        public Strip()
+        {
+        }
+
         public int StripID { get; set; }
         public int Nr { get; set; }
         public string Titel { get; set; }
